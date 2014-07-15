@@ -1,0 +1,61 @@
+Operating system: Linux
+                  0.0.0 Linux 3.13.0-29-generic #53-Ubuntu SMP Wed Jun 4 21:00:20 UTC 2014 x86_64
+CPU: amd64
+     family 6 model 58 stepping 9
+     8 CPUs
+
+Crash reason:  SIGSEGV
+Crash address: 0x0
+
+Thread 0 (crashed)
+ 0  helloWorld + 0x1dd6
+    rax = 0x0000000000000000   rdx = 0x0000000000615240
+    rcx = 0x0000000000000000   rbx = 0x0000000000000000
+    rsi = 0x0000000000000000   rdi = 0x0000000000615240
+    rbp = 0x00007fff60d3b4f0   rsp = 0x00007fff60d3b4f0
+     r8 = 0x0000000000000000    r9 = 0x0000000000000002
+    r10 = 0x00007fff60d3b270   r11 = 0x00007f4297f647c0
+    r12 = 0x0000000000401ca4   r13 = 0x00007fff60d3b6d0
+    r14 = 0x0000000000000000   r15 = 0x0000000000000000
+    rip = 0x0000000000401dd6
+    Found by: given as instruction pointer in context
+ 1  helloWorld + 0x1e90
+    rbp = 0x00007fff60d3b5f0   rsp = 0x00007fff60d3b500
+    rip = 0x0000000000401e90
+    Found by: stack scanning
+ 2  helloWorld + 0x1d8d
+    rbp = 0x00007fff60d3b5f0   rsp = 0x00007fff60d3b570
+    rip = 0x0000000000401d8d
+    Found by: stack scanning
+ 3  helloWorld + 0x1ca4
+    rbp = 0x00007fff60d3b5f0   rsp = 0x00007fff60d3b5e0
+    rip = 0x0000000000401ca4
+    Found by: stack scanning
+ 4  libc-2.19.so + 0x21ec5
+    rsp = 0x00007fff60d3b600   rip = 0x00007f429769aec5
+    Found by: stack scanning
+ 5  helloWorld + 0x1dde
+    rsp = 0x00007fff60d3b620   rip = 0x0000000000401dde
+    Found by: stack scanning
+ 6  helloWorld + 0x1ca4
+    rsp = 0x00007fff60d3b638   rip = 0x0000000000401ca4
+    Found by: stack scanning
+ 7  helloWorld + 0xf420
+    rsp = 0x00007fff60d3b680   rip = 0x000000000040f420
+    Found by: stack scanning
+ 8  helloWorld + 0x1ca4
+    rsp = 0x00007fff60d3b6a8   rip = 0x0000000000401ca4
+    Found by: stack scanning
+ 9  helloWorld + 0x1ccd
+    rsp = 0x00007fff60d3b6c0   rip = 0x0000000000401ccd
+    Found by: stack scanning
+
+Loaded modules:
+0x00400000 - 0x00413fff  helloWorld  ???  (main)  (WARNING: No symbols, helloWorld, 242F94E6A1C9576528305EED80A2C0480)
+0x7f4297373000 - 0x7f4297678fff  libm-2.19.so  ???
+0x7f4297679000 - 0x7f4297a39fff  libc-2.19.so  ???  (WARNING: No symbols, libc-2.19.so, 3AF871B56F8AB25B2D3558CDDDA9F9430)
+0x7f4297a3f000 - 0x7f4297c54fff  libgcc_s.so.1  ???
+0x7f4297c55000 - 0x7f4297f43fff  libstdc++.so.6.0.19  ???
+0x7f4297f59000 - 0x7f4298172fff  libpthread-2.19.so  ???
+0x7f4298177000 - 0x7f4298199fff  ld-2.19.so  ???
+0x7fff60dd5000 - 0x7fff60dd6fff  linux-gate.so  ???
